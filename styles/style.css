@@ -27,6 +27,22 @@
     background: rgb(245, 248, 255);;
 }
 
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    width: 270px;
+    margin: 30px 0;
+    background-color: #E95A08;
+    color: white;
+    padding: 26px 50px;
+    font-size: 1 rem;
+    font-weight: 400;
+    border: none;
+}
+
 
 /* Navbar style */
 .navbar{
@@ -82,9 +98,65 @@
     color: #E95A08;
 }
 
+/* Plants and Card Style */
+.plants-content {
+    max-width: 570px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plants-title {
+    margin-top: 70px;
+    font-weight: 500;
+    font-size: 3.5rem;
+
+}
+
+.plants-details {
+    width: 888px; 
+    height: 44px;
+    margin: 16px 0; 
+    margin-bottom: 49px;
+    font-size: 1.3rem;
+    font-weight: 400px;
+    gap: 16px 0px;
+    text-align: center;
+    align-items: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.card-image {
+    width: 270px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 49px;
+    gap: 30px;
+}
+
+.card-title {
+    color:rgb(17,17,17);
+    font-size: 1.5rem;
+    font-weight: 500;
+    gap: 20px;
+}
+
+.card-price {
+    color:rgb(17,17,17);
+    font-weight: 700;
+    font-size: 1.7rem;
+    gap: 20px;
+}
 
 
-/* Responsive */
+
+
+
+
+
+/* Responsive
 @media screen and (max-width:576px){
     .navbar,
     .nav-links,
@@ -92,4 +164,4 @@
         flex-direction: column;
     }
     
-}
+} */
