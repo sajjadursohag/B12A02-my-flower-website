@@ -30,7 +30,8 @@
 body{
     max-width: 1140px;
     margin: 0 auto;
-}
+} 
+
 
 .btn-primary{
     width: 270px;
@@ -156,12 +157,25 @@ body{
 
 
 
-/* Responsive
+ /* Responsive */
 @media screen and (max-width:576px){
     .navbar,
     .nav-links,
-    .flower {
+    .flower
+     {
         flex-direction: column;
-    }
+     }
+     .flower-title {
+        text-align: center;
+     }
+     .plants-content {
+        align-items: center;
+        width: 100%;
+     }
+     .card-image{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+     }
     
-} */
+} 
