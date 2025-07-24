@@ -23,6 +23,10 @@
     color: #252432;
 }
 
+.bg-color{
+    background: rgb(245, 248, 255);;
+}
+
 
 /* Navbar style */
 .navbar{
@@ -45,4 +49,47 @@
 .navbar, .banner{
     max-width: 1140px;
     margin: 0 auto;
+}
+
+/* flower-content style */
+
+.flower {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: ;
+}
+.flower-content {
+    max-width: 570px;
+    
+}
+
+.flower-title {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.flower-description {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/* .flower-img {
+    width: 100%;
+} */
+
+.span-color{
+    color: #E95A08;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width:576px){
+    .navbar,
+    .nav-links,
+    .flower {
+        flex-direction: column;
+    }
+    
 }
