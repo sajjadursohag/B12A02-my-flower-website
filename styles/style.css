@@ -10,6 +10,12 @@
     "wdth" 100;
 }
 
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
 /* Shared styles */
 .display-flex{
     display: flex;
@@ -151,6 +157,120 @@ body{
     gap: 20px;
 }
 
+/* Lover style */
+.lover {
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    margin-top: 130px;
+    gap: 30px;
+}
+
+.flower-lover-title {
+    font-weight: 700;
+    font-size: 3.6rem;
+}
+
+.team-img-container {
+    width: 540px;
+}
+
+.flower-description {
+    margin: 25px auto;
+}
+
+/* Latest title style */
+
+.deals-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.deals-header h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.deals-color {
+    color:black;
+}
+
+.banner-container{
+    display: flex;
+    gap: 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.banner{
+    position: relative;
+    color: white;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    overflow: hidden;
+}
+
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Input banner */
+
+.input-banner {
+    background: url(../assets/news-letter-bg.png);
+    width: 1140px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.input-banner-content {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.input-banner h1{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.subscribe-form input{
+    padding: 10px;
+    border: none;
+    width: 70%;
+    font-size: 1rem;
+}
+
+.subscribe-form button{
+    background: #f4511e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 
 
 
@@ -161,21 +281,74 @@ body{
 @media screen and (max-width:576px){
     .navbar,
     .nav-links,
-    .flower
+    .flower,
+    .plants,
+    .lover,
+    .input-banner
+
      {
         flex-direction: column;
+        text-align: center;
+
+
      }
      .flower-title {
         text-align: center;
      }
      .plants-content {
-        align-items: center;
+        text-align: center;
+     }
+
+     .plants-details {
         width: 100%;
      }
      .card-image{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
 
+     }
+     .card-image-container {
+        text-align: center;
+
+     }
+     .team-img-container{
+        flex-direction: column;
+        display: block;
+        width: 100%;
+     }
+     .banner-container {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+     .large-banner{
+        flex-direction: column;
+         height: 200px; 
+        text-align: center;
+     }
+     
+     
+     .input-banner {
+        height: auto;
+        padding: 40px 20px;
+     }
+     .input-banner h1{
+        font-size: 1.8rem;
+        display: block;
+     }
+
+     .subscribe-form {
+        flex-direction: column;
+        width: 100%;
+     }
+
+     .subscribe-form input, 
+     .subscribe-form button {
+        width: 100%;
+        margin: 5px 0;
+        padding: 12px;
      }
     
 } 
