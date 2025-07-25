@@ -272,21 +272,47 @@ body{
 }
 
 
+/* Footer style */
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-chanel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+    width: 359px;
+    
+}
+
+.about-teams{
+    margin-top: 20px;
+    width: 395px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 30px;
+}
+
+.footer-chanel {
+    margin-top: 40px;
+    gap: 30px; 
+}
 
 
-
-
-
- /* Responsive */
+/* Responsive */
 @media screen and (max-width:576px){
     .navbar,
     .nav-links,
     .flower,
     .plants,
     .lover,
-    .input-banner
+    .input-banner,
+    .footer-section {
 
-     {
         flex-direction: column;
         text-align: center;
 
@@ -317,27 +343,12 @@ body{
         display: block;
         width: 100%;
      }
+   
      .banner-container {
         flex-direction: column;
         text-align: center;
         margin-left: 50px;
     }
-
-     .large-banner{
-        flex-direction: column;
-         height: 200px; 
-        text-align: center;
-     }
-     
-     
-     .input-banner {
-        height: auto;
-        padding: 40px 20px;
-     }
-     .input-banner h1{
-        font-size: 1.8rem;
-        display: block;
-     }
 
      .subscribe-form {
         flex-direction: column;
@@ -350,5 +361,15 @@ body{
         margin: 5px 0;
         padding: 12px;
      }
-    
+
+     .about-teams {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-inline-start: auto;
+     }
+     .footer-chanel {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+     }
 } 
